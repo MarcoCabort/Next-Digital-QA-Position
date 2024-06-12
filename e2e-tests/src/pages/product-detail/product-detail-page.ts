@@ -40,7 +40,7 @@ async function productPriceShouldBeCorrect(productPrice: string) {
 }
 
 async function productAddToCartButtonShouldBeDisplayed() {
-    expect(getProductAddToCartButton()).toBeVisible();
+    expect(await getProductAddToCartButton()).toBeVisible();
 }
 
 
