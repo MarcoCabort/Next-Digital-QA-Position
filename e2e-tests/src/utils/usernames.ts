@@ -1,0 +1,1 @@
+export const STANDARD_USER = "standard_user";
