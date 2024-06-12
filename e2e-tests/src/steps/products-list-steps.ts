@@ -8,7 +8,6 @@ import { ProductDirector } from "../models/product.director";
 // ------------------ GIVEN ------------------
 
 
-
 // ------------------ WHEN ------------------
 When('the user clicks a product name', async function(){
     await clickProductName(ProductDirector.createBackpackProduct().id);
