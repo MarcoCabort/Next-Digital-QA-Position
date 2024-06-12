@@ -7,4 +7,4 @@ Scenario: User can log in the webpage
     And the user introduce the correct password 
     And the user clicks the Login button
 
-    Then the main page is diplayed correctly
+    Then the products list page is diplayed correctly

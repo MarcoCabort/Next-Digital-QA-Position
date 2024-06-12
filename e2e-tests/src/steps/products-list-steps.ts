@@ -10,6 +10,6 @@ import {
 // ------------------ WHEN ------------------
 
 // ------------------ THEN ------------------
-Then('the main page is diplayed correctly', async function(){
+Then('the products list page is diplayed correctly', async function(){
     await productsListPageShouldBeCorrect();
 });
