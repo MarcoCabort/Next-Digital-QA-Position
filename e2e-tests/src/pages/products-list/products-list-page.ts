@@ -10,6 +10,11 @@ import { expect } from "@playwright/test";
 
 const PRODUCTS_LIST_URL: string = "inventory.html";
 
+// ------------------ ACTIONS ------------------
+export async function clickProductName(productId: string) {
+    await getProductName(productId).click();
+}
+
 // ------------------ ASSERTIONS ------------------
 export async function productsListPageShouldBeCorrect(){
     const url = page.url();
@@ -44,3 +49,7 @@ function getShoppingCartLink(): Locator{
 }
 
 
+// ProductCard
+function getProductName(productId: string): Locator{
+    return getProductsListContainer().locator("#"+productId);
+}

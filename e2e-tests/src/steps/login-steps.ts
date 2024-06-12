@@ -14,6 +14,13 @@ Given('a user that is in the login page', async function(){
     navigateToLoginPage();
 });
 
+Given('a standard logged user that is in the products list page', async function(){
+    navigateToLoginPage();
+    await fillUsernameInput(STANDARD_USER);
+    await fillPasswordInput(CORRECT_PASSWORD);
+    await clickLoginButton();
+});
+
 
 // ------------------ WHEN ------------------
 When('the user introduce the standard user username', async function(){
