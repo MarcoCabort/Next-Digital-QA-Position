@@ -10,7 +10,7 @@ setDefaultTimeout(60 * 1000);
 Before(async function () {
   if (!browser) {
     browser = await chromium.launch({ 
-      headless: false
+      headless: true
     });
   }
   context = await browser.newContext();
