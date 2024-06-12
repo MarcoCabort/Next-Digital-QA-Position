@@ -17,6 +17,12 @@ export async function fillUsernameInput(username:string){
 export async function fillPasswordInput(password:string){
     await getPasswordInput().fill(password);
 }
+
+export async function clickLoginButton(){
+    await getLoginButton().click();
+}
+
+
 // ------------------ ASSERTIONS ------------------
 
 
@@ -27,4 +33,8 @@ function getUsernameInput(): Locator{
 
 function getPasswordInput(): Locator{
     return page.locator(PASSWORD_INPUT_ATTR);
+}
+
+function getLoginButton(): Locator{
+    return page.locator(LOGIN_BUTTON_ATTR);
 }
