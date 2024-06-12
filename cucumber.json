@@ -1,11 +1,17 @@
 {
     "default":{
         "paths":[
-            "e2e-tests/src/features/basic-path/*.feature"
+            "e2e-tests/src/features/**/*.feature"
         ],
         "require":[
             "e2e-tests/src/steps/**/*.ts",
             "e2e-tests/src/support/hooks.ts"
         ],
         "requireModule": ["ts-node/register"],
+        "format": [
+            "@cucumber/pretty-formatter",
+            "html:./cucumber_report.html"
+
+        ]
+    }
 }
