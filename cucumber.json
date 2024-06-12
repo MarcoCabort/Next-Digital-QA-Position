@@ -1,0 +1,11 @@
+{
+    "default":{
+        "paths":[
+            "e2e-tests/src/features/basic-path/*.feature"
+        ],
+        "require":[
+            "e2e-tests/src/steps/**/*.ts",
+            "e2e-tests/src/support/hooks.ts"
+        ],
+        "requireModule": ["ts-node/register"],
+}
