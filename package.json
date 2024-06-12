@@ -1,0 +1,26 @@
+{
+  "name": "next-digital-qa-position",
+  "version": "1.0.0",
+  "description": "Technical test for the position of QA Engineer in Next Digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test"
+  },
+  "keywords": [
+    "ts",
+    "pw",
+    "js"
+  ],
+  "author": "Marco Cabeza",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/html-formatter": "^21.3.1",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@playwright/test": "^1.44.1",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.44.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
